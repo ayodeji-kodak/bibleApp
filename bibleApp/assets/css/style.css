@@ -1,0 +1,134 @@
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #000000;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  
+  /* Variables end */
+  
+  html {
+      scroll-behavior: smooth;
+    }
+    
+    /* CSS Resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+    
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+    
+    a:hover {
+      color: var(--secondary-color);
+    }
+    
+    body {
+      font-family: var(--font-family);
+    }
+  
+    nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 3rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+  
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .registerform{
+    padding: 20px;
+    border-radius: 1em;
+    height: 900px;
+    width: 400px;
+    margin: auto;
+    background-color: rgb(93, 93, 150);
+  
+  }
+
+  .login{
+    padding: 20px;
+    border-radius: 1em;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-color: rgb(184, 41, 36);
+  }
+
+  .forgotPassword{
+    padding: 20px;
+    border-radius: 1em;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(184, 41, 36);
+  }
+
+  input[type=text], input[type=email], input[type=password], input[type=tel]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=button]{
+    background-color: rgb(6, 14, 14);
+    color: aliceblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+  }
+
+  .submit:hover{
+    background-color: #ff7235;
+  }
+  
